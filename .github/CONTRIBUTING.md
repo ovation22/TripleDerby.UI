@@ -1,6 +1,6 @@
 # How to contribute
 
-Please read these guidelines before contributing to SpeakerMeet.UI:
+Please read these guidelines before contributing to TripleDerby.UI:
 
 - [Question or Problem?](#got-a-question-or-problem)
 - [Issues and Bugs](#found-an-issue)
@@ -52,7 +52,7 @@ Read [GitHub Help][pullrequesthelp] for more details about creating pull request
 
 ## Contributor License Agreement
 
-By contributing your code to SpeakerMeet.UI you grant John Callaway a non-exclusive, irrevocable, worldwide,
+By contributing your code to TripleDerby.UI you grant John Callaway a non-exclusive, irrevocable, worldwide,
 royalty-free, sublicenseable, transferable license under all of Your relevant intellectual property rights
 (including copyright, patent, and any other rights), to use, copy, prepare derivative works of, distribute and
 publicly perform and display the Contributions on any licensing terms, including without limitation:
