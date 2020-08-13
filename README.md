@@ -6,6 +6,11 @@
 # TripleDerby.UI
 React front-end for TripleDerby.net
 
+If you're looking for the back-end Api, check out the [TripleDerby.Api](https://github.com/ovation22/TripleDerby.Api) repository.
+
+## Give a Star! :star:
+If you like the project, please consider giving it a star!
+
 ## Contributing
 Any and all are welcome to contribute to this project.
 Please read our [Contributing Guidelines](/.github/CONTRIBUTING.md)
