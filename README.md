@@ -4,7 +4,7 @@
 [![MIT license](http://img.shields.io/badge/license-MIT-brightgreen.svg)](https://github.com/ovation22/TripleDerby.UI/blob/master/LICENSE)
 
 # TripleDerby.UI
-React front-end for TripleDerby.net
+React front-end for TripleDerby.com.
 
 If you're looking for the back-end Api, check out the [TripleDerby.Api](https://github.com/ovation22/TripleDerby.Api) repository.
 
