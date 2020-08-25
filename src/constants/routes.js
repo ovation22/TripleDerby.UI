@@ -12,7 +12,7 @@ export default {
     name: 'Race',
   },
   train: {
-    path: '/traing',
+    path: '/train',
     name: 'Train',
   },
 };
