@@ -12,22 +12,15 @@ export default function Train() {
 
   useEffect(() => {
     const fetchData = async () => {
-      await fetch(endpoints.trainings)
-        .then(res => res.json())
-        .then(
-          result => {
-            const s = result.map(x => ({
-              ...x,
-            }));
-            setTrains(s);
-            setLoaded(true);
-          },
-          e => {
-            setError(e);
-            setLoaded(true);
-            trackException(e);
-          },
-        );
+      try {
+        const response = await fetch(endpoints.trainings);
+        const result = await response.json();
+        setTrains(result);
+      } catch (e) {
+        setError(e);
+        trackException(e);
+      }
+      setLoaded(true);
     };
     fetchData();
   }, []);

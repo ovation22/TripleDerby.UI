@@ -12,22 +12,15 @@ export default function ParentSelector() {
 
   useEffect(() => {
     const fetchData = async () => {
-      await fetch(endpoints.dams)
-        .then(res => res.json())
-        .then(
-          result => {
-            const s = result.map(x => ({
-              ...x,
-            }));
-            setParents(s);
-            setLoaded(true);
-          },
-          e => {
-            setError(e);
-            setLoaded(true);
-            trackException(e);
-          },
-        );
+      try {
+        const response = await fetch(endpoints.dams);
+        const result = await response.json();
+        setParents(result);
+      } catch (e) {
+        setError(e);
+        trackException(e);
+      }
+      setLoaded(true);
     };
     fetchData();
   }, []);

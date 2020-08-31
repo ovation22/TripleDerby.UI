@@ -12,22 +12,15 @@ export default function Race() {
 
   useEffect(() => {
     const fetchData = async () => {
-      await fetch(endpoints.races)
-        .then(res => res.json())
-        .then(
-          result => {
-            const s = result.map(x => ({
-              ...x,
-            }));
-            setRaces(s);
-            setLoaded(true);
-          },
-          e => {
-            setError(e);
-            setLoaded(true);
-            trackException(e);
-          },
-        );
+      try {
+        const response = await fetch(endpoints.races);
+        const result = await response.json();
+        setRaces(result);
+      } catch (e) {
+        setError(e);
+        trackException(e);
+      }
+      setLoaded(true);
     };
     fetchData();
   }, []);
