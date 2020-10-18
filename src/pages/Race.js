@@ -4,6 +4,7 @@ import React, { useEffect, useState } from 'react';
 import ErrorSnackbar from '../components/ErrorSnackbar';
 import endpoints from '../constants/endpoints';
 import { trackException } from '../services/telemetry.service';
+import ResultList from '../components/ResultList';
 
 export default function Race() {
   const [error, setError] = useState(null);
@@ -28,7 +29,7 @@ export default function Race() {
   return (
     <>
       <Container maxWidth="lg" style={{ padding: 24, minHeight: '100vh' }}>
-        {!isLoaded ? <CircularProgress /> : races.length}
+        {!isLoaded ? <CircularProgress /> : <ResultList data={races} />}
       </Container>
 
       <ErrorSnackbar error={error} />
